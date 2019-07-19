@@ -28,7 +28,13 @@ instance_groups:
     release: bpm
   - name: bosh-dns-handler
     release: bosh-dns-handler
-
+    properties:
+      domain: banana.com.
+      aliases:
+        - domain: anthony.banana.com.
+          address: 10.0.0.1
+        - domain: mary.banana.com.
+          address: 10.0.0.2
 
 update:
   canaries: 1

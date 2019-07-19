@@ -1,0 +1,7 @@
+---
+port: 1053
+aliases:
+  - domain: anthony.banana.com
+    address: 10.0.0.1
+  - domain: mary.banana.com
+    address: 10.0.0.2

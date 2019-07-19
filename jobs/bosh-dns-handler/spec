@@ -14,3 +14,15 @@ properties:
   port:
     description: "Listen port for the DNS handler"
     default: 1053
+
+  domain:
+    description: "Domain name for triggering the DNS handler"
+    example: "banana.com."
+
+  aliases:
+    description: "Array of key-value pairs signifying A record DNS resolution answers"
+    example:
+    - domain: anthony.banana.com.
+      address: 10.0.0.1
+    - domain: mary.banana.com.
+      address: 10.0.0.2
